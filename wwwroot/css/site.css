@@ -19,6 +19,41 @@ html {
 
 body {
   margin-bottom: 60px;
+
+  form {
+    input, select, textarea {
+      padding: 0 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+
+    &.create-btn {
+      background-color: #258cfb;
+      color: white;
+    }
+
+    &.edit-btn {
+      background-color: rgb(6, 166, 6);
+      color: white;
+    }
+
+    &.delete-btn {
+      background-color: rgb(248, 52, 52);
+      color: white;
+    }
+
+    &.detail-btn {
+      background-color: rgb(248, 162, 3);
+      color: white;
+    }
+  }
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
